@@ -4,9 +4,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Shop</title>
+  <title>Pet-Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a665c00476.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .sora{
+    font-family: "Sora" , serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  .adlam-display {
+    font-family: "ADLam Display", serif;
+    font-weight: 400;
+    font-style: normal
+  }
+
+  ul .menu-compact {
+    margin: 0;
+    padding: 0;
+  }
+</style>
 </head>
+
 <body>
   
+  <!-- Header Section -->
+
+  <header>
+
+    <!-- Navbar -->
+
+    <nav class="mx-auto bg-[#FFF9F4] sora text-[#111111]">
+      <div class="navbar mx-auto ps-5 lg:px-20 xl:px-40">
+        <div class="navbar-start">
+            <img class="h-9" src="c1-assets/logo-header.png" alt="">
+            <h1 class="hidden lg:block ms-3 lg:text-xl xl:text-2xl">Browse<span
+                    class="text-[#FFDC26]">4</span>Pets</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 lg:text-lg xl:text-xl">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="navbar-end hidden lg:flex space-x-5 lg:text-xl xl:text-2xl">
+        <div class="notification"><i class="fa-regular fa-bell"></i></div>
+        <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="btn-container flex space-x-1">
+          <button
+              class="btn btn-outline px-5 border-[#FFDC26] lg:text-lg xl:text-xl font-normal">Login</button>
+          <button class="btn bg-[#FFDC26] px-5 lg:text-lg xl:text-xl font-normal">Register</button>
+      </div>
+  </div>
+  <div class="navbar-end lg:hidden">
+    <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost ">
+            <i class="fa-solid fa-bars text-xl"></i>
+        </div>
+        <ul tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mr-0 mt-3 right-3 w-56 p-2 shadow">
+        <li><a>Find a pet</a></li>
+        <li><a>Breeds</a></li>
+        <li><a>Contact Us</a></li>
+        <li>
+            <div class="notification"><i class="fa-regular fa-bell"></i>
+                <p>Notification</p>
+          </div>
+          <div class="search"><i class="fa-solid fa-magnifying-glass"></i>
+            <p>Search</p>
+                   </div> 
+  </li>
+  <li class="btn-container flex-row space-x-1">
+    <button class="btn btn-outline btn-sm px-5 border-[#FFDC26] font-normal">LogIn</button>
+    <button class="btn bg-[#FFDC26] btn-sm px-5 font-normal">Register</button>
+     </li>
+     </ul>
+    </div>
+    </div>
+    </div>
+</nav>                                     
+  
+<!-- Banner -->
+
+<div
+  class="mx-auto px-5 md:px-5 lg:px-0 lg:mx-20 xl:mx-40 my-5 lg:my-16 bg-[url(assets/cat-big.png)] bg-contain xl:bg-cover bg-bottom bg-no-repeat h-[420px] md:h-[530px] lg:h-[670px] xl:h-[710px]">
+  <div class="text-content space-y-5 lg:space-y-6">
+      <h1
+          class="banner-heading adlam-display text-3xl lg:text-5xl text-[#111111] lg:leading-snug animate-bounce">
+          Pamper Your
+          Pet,<br>Because They
+          Deserve <br>the Best</h1>
+      <p class="sora lg:text-xl md:w-[60%] lg:w-full text-[#585858] lg:leading-9">Discover a world of treats,
+          toys,
+          and
+          essentials handpicked
+          for <br class="hidden lg:block"> your furry friends. Shop now and make tails wag with joy!</p>
+      <button class="btn bg-[#FFDC26] btn-sm px-5 h-4 lg:h-12 sora lg:text-xl font-normal">Find a pet</button>
+  </div>
+</div>
+</header>
+
+
+  </header>
 </body>
 </html>
